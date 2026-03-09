@@ -62,6 +62,60 @@
                 </div>
               </div>
          </section>
+
+         <!-- all card section -->
+          <section class="mt-7">
+             <div id="allCardContainer" class="allCardContainer grid grid-cols-1 gap-4 md:grid-cols-3">
+                 
+             </div>
+          </section>
+
+          <!-- spinner section  -->
+           <section id="spinnerDiv" class="hidden flex justify-center items-center py-15">
+               <span class="loading loading-spinner loading-3xl"></span>
+           </section>
+       
+          <!-- moda card section  -->
+           <section class="modal-section">
+            <!-- Open the modal using ID.showModal() method -->
+                <!-- <button class="btn" onclick="card_details.showModal()">open modal</button> -->
+                <dialog id="card_details" class="modal">
+                <div class="modal-box p-6">
+                    <div class="text space-y-4">
+                      <div class="flex items-center justify-between">
+                        <h2 id="modalTitle" class="text-xl font-bold"></h2>
+                         <p><i onclick="document.getElementById('card_details').close()" class="fa-solid fa-circle-xmark"></i></p>
+                       </div>
+                       <div class="flex items-center gap-2">
+                         <p id="status2" class="bg-[#F0E2FF] px-[10px] text-purple-500 rounded-full"></p>
+                         <p>Opened by <span id="author" class="font-bold"></span></p>
+                         <span id="createdAt"></span>
+                       </div>
+                       <div id="labels-container">
+
+                       </div>
+
+                       <p id="description" class="text-[gray]"></p>
+                       <div class="flex justify-between">
+                          <div>
+                            <p class="text-[gray]">Assignee</p>
+                            <p id="assignee"></p>
+                          </div>
+                          <div>
+                             <p class="text-[gray]">priority</p>
+                             <span id="priority2" class=" px-6 rounded-full"></span>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-primary">Close</button>
+                    </form>
+                    </div>
+                </div>
+                </dialog>
+           </section>
     </main>
 
 </body>
