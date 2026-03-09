@@ -11,7 +11,7 @@
         console.log(userName);
         if(userName === 'admin' && password === 'admin123'){
             alert('login success!')
-            window.location.assign('/homepage.html');
+            window.location.assign('homepage.html');
         }else{
             alert('login Failed');
             userNameInput.value = '';
