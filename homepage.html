@@ -31,5 +31,38 @@
 
        </div>
     </header>
+
+     <main class="w-10/12 mx-auto mt-5">
+        <!-- all open closed button section -->
+         <section class="button-section p-5 shadow-md flex gap-3 flex-col md:flex-row">
+            <button onclick="selectButton('all')" id="all" class="max-sm:w-full changeButton btn btn-primary w-[120px]">All</button>
+            <button onclick="selectButton('open')" id="open" class="max-sm:w-full changeButton btn w-[120px] text-gray-600">Open</button>
+            <button onclick="selectButton('closed')" id="closed" class="max-sm:w-full changeButton btn w-[120px] text-gray-600">Closed</button>
+         </section>
+       
+         <!-- all issues open and close  -->
+         <section class="mt-6 flex flex-col gap-4  justify-between p-5 shadow-sm items-center md:flex-row">
+              <div class="flex items-center gap-2">
+                <div class="flex justify-center items-center h-[40px] w-[40px] rounded-full bg-[#ECE4FF]">
+                   <img src="./assets/Aperture.png" alt="">
+                </div>
+                <div class="issue-text">
+                    <h2 class="font-bold"><span id="number-of-issue">50</span> Issues</h2>
+                    <p class="text-[#64748B]">Track and manage your project issues</p>
+                </div>
+              </div>
+              <div class="open-close flex gap-4">
+                <div class="open flex items-center gap-1">
+                   <p class="h-[10px] w-[10px] bg-green-500 rounded-full"></p>
+                   <p class="">Open</p>
+                </div>
+                <div class="close flex items-center gap-1">
+                    <p class="h-[10px] w-[10px] bg-purple-500 rounded-full"></p>
+                    <p>Closed</p>
+                </div>
+              </div>
+         </section>
+    </main>
+
 </body>
 </html>
